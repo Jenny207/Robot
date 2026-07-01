@@ -1,0 +1,28 @@
+import os
+
+MODEL_PATH = 'D:/python-learn/pythonProject/yolo -1/runs/detect/train/weights/best.pt'
+VIDEO_PATH = 'D:/视觉作业/作业3/作业3/2.mp4'
+
+CONF_THRESHOLD = 0.5
+IOU_THRESHOLD = 0.45
+VEHICLE_CLASSES = [2, 3, 5, 7]
+CLASS_NAMES = {2: 'car', 3: 'motorcycle', 5: 'bus', 7: 'truck'}
+
+TRACKER_TYPE = 'botsort.yaml'
+MOVE_THRESHOLD = 5
+
+LINE_POSITION_RATIO = 0.55
+
+RESIZE_WIDTH = 1280
+SHOW_LABELS = True
+SHOW_FPS = True
+MAX_HISTORY = 30
+LINE_COLOR = (255, 0, 255)
+
+SPEED_ANALYSIS_WINDOW = 10.0
+SPEED_HISTORY_LENGTH = 120
+ACTIVE_TRACK_THRESHOLD = 30
+MIN_SPEED_SAMPLES = 3
+
+SHOW_SPEED_PANEL = True
+SHOW_VEHICLE_SPEED = True
