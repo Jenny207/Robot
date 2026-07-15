@@ -38,8 +38,6 @@ ax.legend(title='counties color')
 
 plt.show()
 
-
-
 # 统计县名称为空值的数量
 none_count = df['县名称'].isna().sum()
 print(f"县名称为 None/NaN 的数量是: {none_count}")
@@ -53,9 +51,6 @@ mask = df['县名称'].isna()
 df.loc[mask, '编号字符串'] = "44"
 df.loc[mask, '标注编码'] = 44
 
-# 4. 打印修改结果，确认改了多少行
-print(f"已修改 {mask.sum()} 行")
-print(f"修改了 {mask.sum()} 行的编号字符串和标注编码为 44")
 
 
 
